@@ -7,6 +7,13 @@ directory = [
     {'name': "Bob McKenzie", 'hair': "brown", 'eyes': "green", 'species': 'human', 'nationality': "CA"},
     {'name': "Doug McKenzie", 'hair': "blond", 'eyes': "blue", 'species': 'human', 'nationality': "CA"},
     ]
+# side note: d = {1: 'a', 2: 'b', 3: True, 4: False}
+MESSAGE_TEXT = {True: "Welcome to Pottersville Bank!",
+             False: "I'm sorry, we could not find your records.  Please call Pottersville Bank at 800-WE-NASTY"
+             }
+
+login_result = login(username)
+print(MESSAGE_TEXT[login_result])
 # Store some people in variables [] are index operator 
 megan = directory[0]
 wendoline = directory[3]
